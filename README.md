@@ -5,27 +5,33 @@
 *Implementation of FIFO, LRU, and Optimal page replacement algorithms*
 
 
-To Run: 
+**To Run**: 
 
-    The program takes 2 arguments, execute it by running: python3 paging.py [arg1] [arg2]
+    The program takes 2 arguments, execute it by running: python paging.py [arg1] [arg2]
 
     [arg1] refers to the number of page references you would like
 
     [arg2] refers to the number of frames you would like
 
-Output Example for case of:          ***python3 pages.py 15 5***
+Output Example for case of: _python3 pages.py 32 3_
 
-    _________________________________________________________________ 
+    ________________________________________ 
 
-    Number of References:  15                                               #Provided by 1st Argument
-    Number of Frames:  5                                                    #Provided by 2nd Argument (or defualt = 3)
-    Page References:  [7, 6, 2, 1, 6, 1, 2, 7, 4, 5, 4, 8, 2, 6, 0]         #Generated Reference String
-    _________________________________________________________________ 
+    PAGE REPLACEMENT ALGORITHMS
+    ________________________________________ 
 
-    FIFO:  9  page faults.                                                  #Output for FIFO Algorithm
-    LRU:  9  page faults.                                                   #Output for LRU Algorithm
-    OPT:  8  page faults.                                                   #Output for OPT Algorithm
-    _________________________________________________________________ 
+    Number of References:  32 
+    Number of Frames:  3 
+    Page References:  [5, 4, 1, 1, 8, 5, 8, 7, 
+    0, 7, 3, 8, 0, 2, 2, 6, 1, 3, 3, 0, 8, 7, 
+    7, 4, 3, 6, 7, 0, 3, 8, 6, 3]
+    ________________________________________ 
+
+    FIFO:  24  page faults.
+    LRU:   25  page faults.
+    OPT:   16  page faults.
+    ________________________________________ 
+
 
 
 
@@ -33,3 +39,6 @@ Output Example for case of:          ***python3 pages.py 15 5***
 If you would like, you may run the program with *only* the 1st argument (that is, where you specify the number of page references you want). In this case,
 the number of frames will default to 3. 
 
+You _must_ run the program with at least 1 argument. 
+
+*Program was written to be compiled on python3*
